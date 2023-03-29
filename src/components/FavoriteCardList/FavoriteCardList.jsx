@@ -1,14 +1,12 @@
+import { useState } from 'react';
+
 import './FavoriteCardList.css';
 import FavoriteCard from '../FavoriteCard/FavoriteCard';
 import FavoriteCardMin from '../FavoriteCardMin/FavoriteCardMin';
 
-function FavoriteCardList({
-  favorites,
-  handleRemoveFavorite,
-  minimized,
-  setMinimized,
-  setFavorites,
-}) {
+function FavoriteCardList({ favorites, handleRemoveFavorite, setFavorites }) {
+  const [minimized, setMinimized] = useState(true);
+
   return (
     <>
       {minimized && (
@@ -16,12 +14,12 @@ function FavoriteCardList({
           {favorites.length > 0 && (
             <button
               onClick={() => setFavorites([])}
-              className="bg-clear-bin absolute top-0 right-0 h-7 w-7 cursor-pointer bg-contain bg-center bg-no-repeat"
+              className="absolute right-0 top-0 h-7 w-7 cursor-pointer bg-clear-bin bg-contain bg-center bg-no-repeat"
             ></button>
           )}
           <button
             onClick={() => setMinimized(false)}
-            className="bg-maximize-button fixed bottom-16 right-0 h-7 w-7 bg-contain bg-center bg-no-repeat"
+            className="fixed bottom-16 right-0 h-7 w-7 bg-maximize-button bg-contain bg-center bg-no-repeat"
           ></button>
           <ul className="flex max-h-[70vh] flex-col flex-wrap-reverse content-start items-start gap-2 p-0">
             <FavoriteCardMin
@@ -36,12 +34,12 @@ function FavoriteCardList({
           {favorites.length > 0 && (
             <button
               onClick={() => setFavorites([])}
-              className="bg-clear-bin bg-centerbg-no-repeat absolute top-0 right-0 h-7 w-7 cursor-pointer bg-contain"
+              className="bg-centerbg-no-repeat absolute right-0 top-0 h-7 w-7 cursor-pointer bg-clear-bin bg-contain"
             ></button>
           )}
           <button
             onClick={() => setMinimized(true)}
-            className="bg-minimize-button fixed bottom-16 right-0 h-7 w-7 bg-contain bg-center bg-no-repeat"
+            className="fixed bottom-16 right-0 h-7 w-7 bg-minimize-button bg-contain bg-center bg-no-repeat"
           ></button>
           <ul className="flex flex-wrap justify-center gap-3 p-0 pr-4">
             <FavoriteCard
