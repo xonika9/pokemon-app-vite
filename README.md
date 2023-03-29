@@ -28,6 +28,7 @@ Web app for Pokémon enthusiasts. Here you can find out Pokémon characteristics
   * Retrieving Pokémon info from API and rendering them on a page
   * Sorting, searching, adding to favorites, comparing of Pokémon
   * Saving lists to localStorage
+  * Custom React Hooks
   
 ***
 ### Installation
