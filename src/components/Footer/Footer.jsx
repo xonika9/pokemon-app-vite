@@ -8,7 +8,7 @@ function Footer() {
         <p>&copy; {year}</p>
         <p>Pokemon by x9</p>
         <a
-          href="https://github.com/xonika9/pokemon-app"
+          href="https://github.com/xonika9/pokemon-app-vite"
           rel="noreferrer"
           target="_blank"
         >
