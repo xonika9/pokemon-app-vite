@@ -22,7 +22,7 @@ const Comparison = ({
         {comparisonList.length > 0 && (
           <button
             onClick={() => setComparisonList([])}
-            className="bg-clear-bin h-7 w-7 cursor-pointer border-none bg-contain bg-no-repeat text-center"
+            className="h-7 w-7 cursor-pointer border-none bg-clear-bin bg-contain bg-no-repeat text-center"
           ></button>
         )}
       </div>
@@ -40,13 +40,13 @@ const Comparison = ({
                   className="sticky border border-solid border-gray-500 bg-blue-100 p-2 text-center capitalize"
                 >
                   <button
-                    className="bg-compare-checked absolute top-0 right-0 m-3 mx-2 h-5 w-5 cursor-pointer border-none bg-contain bg-no-repeat p-0 text-center transition-all duration-300"
+                    className="absolute right-0 top-0 m-3 mx-2 h-5 w-5 cursor-pointer border-none bg-compare-checked bg-contain bg-no-repeat p-0 text-center transition-all duration-300"
                     onClick={() => handleToggleCompare(pokemon)}
                   ></button>
                   <img
                     src={pokemon.image}
                     alt={pokemon.name}
-                    className="h-28 w-28 object-contain"
+                    className="h-24 w-24 max-w-none object-contain"
                   />
                   {pokemon.name}
                 </th>
