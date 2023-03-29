@@ -26,7 +26,8 @@ Web app for Pokémon enthusiasts. Here you can find out Pokémon characteristics
   * Object-oriented code
   * API handling
   * Retrieving Pokémon info from API and rendering them on a page
-  * Sort, search, add to favorites, compare Pokémon
+  * Sorting, searching, adding to favorites, comparing of Pokémon
+  * Saving lists to localStorage
   
 ***
 ### Installation
