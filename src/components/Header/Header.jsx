@@ -13,7 +13,7 @@ function Header({
     <header className="flex flex-col items-center justify-between gap-5 bg-white p-4 text-gray-900 shadow-md md:flex-row">
       <Link
         to="/"
-        className="bg-pokemon-logo h-10 w-24 bg-contain bg-center bg-no-repeat"
+        className="h-10 w-24 bg-pokemon-logo bg-contain bg-center bg-no-repeat"
       ></Link>
       {/* <h1 className="text-2xl font-bold">x9Pokémon</h1> */}
       <Link
@@ -24,7 +24,7 @@ function Header({
       </Link>
       <div className="relative flex items-center">
         <input
-          className="w-full rounded-md bg-white py-2 pl-2 pr-10 text-gray-900 placeholder-gray-900 shadow-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+          className="w-full rounded-md bg-white py-2 pl-2 pr-10 text-gray-900 placeholder-gray-900 shadow-md [-webkit-appearance:none] focus:outline-none focus:ring-2 focus:ring-gray-300"
           type="text"
           placeholder="Search"
           value={searchTerm}
@@ -32,7 +32,7 @@ function Header({
         />
         {searchTerm && (
           <button
-            className="bg-clear-button absolute right-2 h-4 w-4 cursor-pointer bg-contain bg-center bg-no-repeat"
+            className="absolute right-2 h-4 w-4 cursor-pointer bg-clear-button bg-contain bg-center bg-no-repeat"
             onClick={handleClearSearch}
           ></button>
         )}
