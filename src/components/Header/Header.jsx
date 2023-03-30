@@ -36,7 +36,7 @@ function Header({
         <input
           type="text"
           placeholder="Search"
-          className="input-bordered input-warning input w-full max-w-xs placeholder-gray-900 [-webkit-appearance:none]"
+          className="input-bordered input-warning input w-full max-w-xs appearance-none bg-white placeholder-gray-900"
           value={searchTerm}
           onChange={handleSearchChange}
         />
@@ -53,7 +53,7 @@ function Header({
         </label>
         <select
           // className=" w-full cursor-pointer appearance-none rounded-md bg-white py-2 pl-2 pr-8 text-gray-900 shadow-md focus:outline-none focus:ring-2 focus:ring-gray-300"
-          className="select-warning select text-base font-normal"
+          className="select-warning select appearance-none bg-white text-base font-normal"
           value={sortOrder}
           onChange={handleSortChange}
         >

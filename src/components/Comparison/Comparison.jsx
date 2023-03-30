@@ -28,7 +28,7 @@ const Comparison = ({
       </div>
 
       <div className="my-4 max-w-full overflow-x-auto bg-white">
-        <table className="table-zebra w-full border-collapse">
+        <table className="w-full border-collapse">
           <thead>
             <tr>
               <th className="border border-solid border-gray-500 p-2 text-center capitalize">
