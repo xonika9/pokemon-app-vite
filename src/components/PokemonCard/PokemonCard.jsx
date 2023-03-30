@@ -51,13 +51,43 @@ function PokemonCard({
                 ></button>
               )}
             </div>
-            <ul className="mt-4 grid grid-cols-2 gap-x-2 gap-y-1">
-              <li className="text-lg">HP: {pokemon.stats[0].base_stat}</li>
-              <li className="text-lg">Attack: {pokemon.stats[1].base_stat}</li>
-              <li className="text-lg">Defense: {pokemon.stats[2].base_stat}</li>
-              <li className="text-lg">Sp. Atk: {pokemon.stats[3].base_stat}</li>
-              <li className="text-lg">Sp. Def: {pokemon.stats[4].base_stat}</li>
-              <li className="text-lg">Speed: {pokemon.stats[5].base_stat}</li>
+            <ul className="mt-4 grid grid-cols-3 gap-2">
+              <li>
+                <p className="text-lg text-gray-400">Health</p>
+                <p className="text-4xl font-bold">
+                  {pokemon.stats[0].base_stat}
+                </p>
+              </li>
+              <li>
+                <p className="text-lg text-gray-400">Attack</p>
+                <p className="text-4xl font-bold">
+                  {pokemon.stats[1].base_stat}
+                </p>
+              </li>
+              <li>
+                <p className="text-lg text-gray-400">Defense</p>
+                <p className="text-4xl font-bold">
+                  {pokemon.stats[2].base_stat}
+                </p>
+              </li>
+              <li>
+                <p className="text-lg text-gray-400">Sp. Atk</p>
+                <p className="text-4xl font-bold">
+                  {pokemon.stats[3].base_stat}
+                </p>
+              </li>
+              <li>
+                <p className="text-lg text-gray-400">Sp. Def</p>
+                <p className="text-4xl font-bold">
+                  {pokemon.stats[4].base_stat}
+                </p>
+              </li>
+              <li>
+                <p className="text-lg text-gray-400">Speed</p>
+                <p className="text-4xl font-bold">
+                  {pokemon.stats[5].base_stat}
+                </p>
+              </li>
             </ul>
           </div>
         </li>

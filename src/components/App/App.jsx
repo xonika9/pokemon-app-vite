@@ -36,7 +36,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-100 text-center font-sans text-gray-900">
+      <div className="flex min-h-screen flex-col bg-gray-100 text-center font-sans text-gray-900">
         <Header
           sortOrder={sortOrder}
           handleSortChange={handleSortChange}
