@@ -13,7 +13,9 @@ function Character({
 }) {
   return (
     <div
-      className={`flex ${name === 'Евстафий' ? 'flex-row-reverse' : ''} gap-8`}
+      className={`flex ${
+        name === 'Pokemon 2' ? 'flex-row-reverse' : ''
+      } flex-col items-center gap-8`}
     >
       <div className="flex w-36 flex-col items-center gap-2">
         <h2 className="text-xl font-bold">{name}</h2>

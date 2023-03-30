@@ -38,7 +38,7 @@ function Move({ move, onMoveClick, gameStatus }) {
             alt="Hardware Icon"
             className="inline align-middle"
           />
-          {` Физический урон ${physicalDmg} / защита ${physicArmorPercents}`}
+          {` Physical damage ${physicalDmg} / defence ${physicArmorPercents}`}
         </p>
         <p className="text-sm">
           <img
@@ -46,7 +46,7 @@ function Move({ move, onMoveClick, gameStatus }) {
             alt="Auto Fix High Icon"
             className="inline align-middle"
           />
-          {` Магический урон ${magicDmg} / защита ${magicArmorPercents}`}
+          {` Magical damage ${magicDmg} / defence ${magicArmorPercents}`}
         </p>
         {!cooldown ? (
           ''
@@ -57,7 +57,7 @@ function Move({ move, onMoveClick, gameStatus }) {
               alt="Loop Icon"
               className="inline align-middle"
             />
-            {` Заряд: ${
+            {` Charge: ${
               cooldownCounter === 0 ? cooldown : cooldownCounter - 1
             } из ${cooldown}`}
           </p>

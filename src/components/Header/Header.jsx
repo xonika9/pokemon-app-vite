@@ -22,6 +22,16 @@ function Header({
           Compare {comparisonList.length} pokemons
         </button>
       </Link>
+      <Link to="/fight">
+        <button className="btn-warning btn w-52 text-gray-900 hover:bg-white">
+          Battle
+        </button>
+      </Link>
+      <Link to="/moves">
+        <button className="btn-warning btn w-52 text-gray-900 hover:bg-white">
+          Moves
+        </button>
+      </Link>
       <div className="relative flex w-52  items-center">
         <input
           type="text"

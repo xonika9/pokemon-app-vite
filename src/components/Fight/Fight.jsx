@@ -5,7 +5,7 @@ import CentralBlock from './CentralBlock';
 function Fight() {
   const monsterMovesProps = [
     {
-      name: 'Удар когтистой лапой',
+      name: 'Catastropika',
       physicalDmg: 3,
       magicDmg: 0,
       physicArmorPercents: 20,
@@ -16,7 +16,7 @@ function Fight() {
       avaliable: true,
     },
     {
-      name: 'Огненное дыхание',
+      name: 'Pulverizing Pancake',
       physicalDmg: 0,
       magicDmg: 4,
       physicArmorPercents: 0,
@@ -27,7 +27,7 @@ function Fight() {
       avaliable: true,
     },
     {
-      name: 'Удар хвостом',
+      name: 'Explosion',
       physicalDmg: 2,
       magicDmg: 0,
       physicArmorPercents: 50,
@@ -41,7 +41,7 @@ function Fight() {
 
   const heroMovesProps = [
     {
-      name: 'Удар боевым кадилом',
+      name: 'Splintered Stormshards',
       physicalDmg: 2,
       magicDmg: 0,
       physicArmorPercents: 0,
@@ -52,7 +52,7 @@ function Fight() {
       avaliable: true,
     },
     {
-      name: 'Вертушка левой пяткой',
+      name: 'Oceanic Operetta',
       physicalDmg: 4,
       magicDmg: 0,
       physicArmorPercents: 0,
@@ -63,7 +63,7 @@ function Fight() {
       avaliable: true,
     },
     {
-      name: 'Каноничный фаербол',
+      name: 'Searing Sunraze Smash',
       physicalDmg: 0,
       magicDmg: 5,
       physicArmorPercents: 0,
@@ -74,7 +74,7 @@ function Fight() {
       avaliable: true,
     },
     {
-      name: 'Магический блок',
+      name: 'Magic block',
       physicalDmg: 0,
       magicDmg: 0,
       physicArmorPercents: 100,
@@ -154,10 +154,10 @@ function Fight() {
           end: true,
           looser:
             newHeroHealth <= 0 && newMonsterHealth <= 0
-              ? 'Мир'
+              ? 'Spare'
               : newHeroHealth <= 0
-              ? 'Евстафий'
-              : 'Лютый',
+              ? 'Pokemon 2'
+              : 'Pokemon 1',
         });
         return;
       }
@@ -221,11 +221,11 @@ function Fight() {
   };
 
   return (
-    <div className="my-10 flex justify-between p-4">
+    <div className="my-10 flex justify-evenly p-4">
       <Character
         maxHealth={10}
         health={monsterHealth}
-        name="Лютый"
+        name="Pokemon 1"
         imageName="dragon"
         moves={monsterMoveList}
         onMoveClick={() => {}}
@@ -238,7 +238,7 @@ function Fight() {
       <Character
         maxHealth={heroMaxHealth}
         health={heroHealth}
-        name="Евстафий"
+        name="Pokemon 2"
         imageName="wizard"
         moves={heroMoveList}
         onMoveClick={makeHeroMove}
