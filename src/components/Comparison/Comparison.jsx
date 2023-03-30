@@ -18,7 +18,7 @@ const Comparison = ({
   return (
     <div className="flex flex-col items-center overflow-auto pt-4">
       <div className="m-5 flex gap-3">
-        <h2 className="text-lg">Comparison</h2>
+        <h2 className="text-xl">Comparison</h2>
         {comparisonList.length > 0 && (
           <button
             onClick={() => setComparisonList([])}
@@ -27,17 +27,17 @@ const Comparison = ({
         )}
       </div>
 
-      <div className="mt-4 max-w-full overflow-x-auto">
-        <table className="w-full border-collapse">
+      <div className="my-4 max-w-full overflow-x-auto bg-white">
+        <table className="table-zebra w-full border-collapse">
           <thead>
             <tr>
-              <th className="border border-solid border-gray-500 bg-green-100 p-2 text-center capitalize">
+              <th className="border border-solid border-gray-500 p-2 text-center capitalize">
                 Stat
               </th>
               {comparisonList.map((pokemon) => (
                 <th
                   key={pokemon.name}
-                  className="sticky border border-solid border-gray-500 bg-blue-100 p-2 text-center capitalize"
+                  className="sticky border border-solid border-gray-500 p-2 text-center capitalize"
                 >
                   <button
                     className="absolute right-0 top-0 m-3 mx-2 h-5 w-5 cursor-pointer border-none bg-compare-checked bg-contain bg-no-repeat p-0 text-center transition-all duration-300"
@@ -56,7 +56,7 @@ const Comparison = ({
           <tbody>
             {statsLabels.map((statName, index) => (
               <tr key={statName}>
-                <td className="sticky left-0 border border-solid border-gray-500 bg-green-100 p-2 text-center ">
+                <td className="sticky left-0 border border-solid border-gray-500 bg-gray-50 p-2 text-center font-bold">
                   {statName}
                 </td>
                 {comparisonList.map((pokemon) => (

@@ -4,9 +4,9 @@ function MoreButton({ numCards, filteredPokemon, addCards }) {
   return (
     <>
       {numCards < filteredPokemon.length && (
-        <div className="flex justify-center py-3 px-0">
+        <div className="flex justify-center px-0 py-3 pb-10">
           <button
-            className="cursor-pointer rounded border-none bg-green-500 py-2 px-20 text-base text-white hover:bg-green-600 md:px-36"
+            className="btn-warning btn w-52 text-gray-900 hover:bg-white"
             onClick={addCards}
           >
             More

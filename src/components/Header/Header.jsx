@@ -15,18 +15,18 @@ function Header({
         to="/"
         className="h-10 w-24 bg-pokemon-logo bg-contain bg-center bg-no-repeat"
       ></Link>
+
       {/* <h1 className="text-2xl font-bold">x9Pokémon</h1> */}
-      <Link
-        to="/compare"
-        className="text-center text-lg text-gray-900 no-underline"
-      >
-        Compare {comparisonList.length} pokemons
+      <Link to="/compare">
+        <button className="btn-warning btn w-52 text-gray-900 hover:bg-white">
+          Compare {comparisonList.length} pokemons
+        </button>
       </Link>
-      <div className="relative flex items-center">
+      <div className="relative flex w-52  items-center">
         <input
-          className="w-full rounded-md bg-white py-2 pl-2 pr-10 text-gray-900 placeholder-gray-900 shadow-md [-webkit-appearance:none] focus:outline-none focus:ring-2 focus:ring-gray-300"
           type="text"
           placeholder="Search"
+          className="input-bordered input-warning input w-full max-w-xs placeholder-gray-900 [-webkit-appearance:none]"
           value={searchTerm}
           onChange={handleSearchChange}
         />
@@ -37,12 +37,13 @@ function Header({
           ></button>
         )}
       </div>
-      <div className="flex items-center">
-        <label htmlFor="sort-by-select" className="mr-2 text-center text-lg">
+      <div className="flex w-52 items-center">
+        <label htmlFor="sort-by-select" className="mr-2 text-center">
           Sort:
         </label>
         <select
-          className=" w-full cursor-pointer appearance-none rounded-md bg-white py-2 pl-2 pr-8 text-gray-900 shadow-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+          // className=" w-full cursor-pointer appearance-none rounded-md bg-white py-2 pl-2 pr-8 text-gray-900 shadow-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+          className="select-warning select text-base font-normal"
           value={sortOrder}
           onChange={handleSortChange}
         >
