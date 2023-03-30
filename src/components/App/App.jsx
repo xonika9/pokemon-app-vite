@@ -9,6 +9,7 @@ import PokemonCardList from '../PokemonCardList/PokemonCardList';
 import FavoriteCardList from '../FavoriteCardList/FavoriteCardList';
 import MoreButton from '../MoreButton/MoreButton';
 import Comparison from '../Comparison/Comparison';
+import Fight from '../Fight/Fight';
 
 import usePokemonData from '../../hooks/usePokemonData';
 import useFavorites from '../../hooks/useFavorites';
@@ -82,6 +83,7 @@ function App() {
               />
             }
           />
+          <Route path="/fight" element={<Fight />} />
         </Routes>
         <Footer
           sortOrder={sortOrder}
